@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Card } from '../components/Card';
-import { Heart, DollarSign, Stethoscope, HelpCircle } from 'lucide-react';
+import { Heart, DollarSign, Stethoscope, HelpCircle, Activity } from 'lucide-react';
 import './HomeScreen.css';
 
 const HomeScreen: React.FC = () => {
@@ -15,6 +15,14 @@ const HomeScreen: React.FC = () => {
       icon: Heart,
       path: '/blood-donation',
       color: 'var(--color-primary)'
+    },
+    {
+      id: 'organ',
+      title: 'Organ Donation',
+      description: 'Become an organ donor',
+      icon: Activity,
+      path: '/organ-donation',
+      color: '#e91e63'
     },
     {
       id: 'fund',

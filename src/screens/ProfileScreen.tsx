@@ -11,6 +11,7 @@ const ProfileScreen: React.FC = () => {
       case 'blood': return '🩸';
       case 'fund': return '💰';
       case 'equipment': return '🏥';
+      case 'organ': return '❤️';
       default: return '❤️';
     }
   };

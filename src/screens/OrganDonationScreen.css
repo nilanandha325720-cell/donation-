@@ -1,0 +1,198 @@
+.organ-donation-screen {
+  padding: var(--space-xl);
+  padding-bottom: calc(var(--space-xl) + 80px);
+}
+
+.screen-header {
+  margin-bottom: var(--space-xl);
+}
+
+.screen-header h1 {
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text);
+  margin-bottom: var(--space-sm);
+}
+
+.screen-header p {
+  color: var(--color-text-secondary);
+}
+
+.info-banner {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  background: linear-gradient(135deg, var(--color-primary-light), var(--color-primary));
+  color: var(--color-white);
+  padding: var(--space-lg);
+  border-radius: var(--radius-md);
+  margin-bottom: var(--space-xl);
+}
+
+.info-banner h3 {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+  margin-bottom: var(--space-sm);
+}
+
+.info-banner p {
+  font-size: var(--font-size-sm);
+  opacity: 0.9;
+  line-height: 1.4;
+}
+
+.filter-section {
+  margin-bottom: var(--space-xl);
+}
+
+.filter-label {
+  display: block;
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text);
+  margin-bottom: var(--space-sm);
+}
+
+.organ-filter {
+  width: 100%;
+  padding: var(--space-md);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  font-size: var(--font-size-base);
+  background-color: var(--color-white);
+}
+
+.registration-section {
+  margin-bottom: var(--space-3xl);
+}
+
+.registration-card {
+  padding: var(--space-xl);
+  text-align: center;
+  background: linear-gradient(135deg, var(--color-white), var(--color-neutral-light));
+  border: 2px solid var(--color-primary);
+}
+
+.registration-card h3 {
+  color: var(--color-primary);
+  margin-bottom: var(--space-md);
+}
+
+.registration-card p {
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-lg);
+  line-height: 1.5;
+}
+
+.requests-section h2 {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text);
+  margin-bottom: var(--space-lg);
+}
+
+.requests-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.request-card {
+  padding: var(--space-lg);
+}
+
+.request-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: var(--space-lg);
+}
+
+.patient-info {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.avatar {
+  font-size: 2rem;
+}
+
+.patient-name {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text);
+  margin-bottom: var(--space-xs);
+}
+
+.organ-badge {
+  display: inline-block;
+  padding: var(--space-xs) var(--space-sm);
+  border-radius: var(--radius-sm);
+  color: var(--color-white);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+}
+
+.urgency-indicator {
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-bold);
+}
+
+.request-details {
+  margin-bottom: var(--space-lg);
+}
+
+.detail-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-sm);
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+}
+
+.detail-item:last-child {
+  margin-bottom: 0;
+}
+
+.request-note {
+  background-color: var(--color-neutral-light);
+  padding: var(--space-md);
+  border-radius: var(--radius-sm);
+  border-left: 4px solid var(--color-primary);
+}
+
+.request-note p {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  line-height: 1.5;
+  margin: 0;
+}
+
+.success-content {
+  text-align: center;
+  padding: var(--space-lg) 0;
+}
+
+.success-icon {
+  font-size: 3rem;
+  margin-bottom: var(--space-md);
+}
+
+.success-content h3 {
+  color: var(--color-success);
+  margin-bottom: var(--space-md);
+}
+
+.success-content p {
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-sm);
+  line-height: 1.5;
+}
+
+.success-note {
+  font-size: var(--font-size-sm);
+  font-style: italic;
+  color: var(--color-primary);
+}

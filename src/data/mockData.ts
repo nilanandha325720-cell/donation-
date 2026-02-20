@@ -27,9 +27,21 @@ export interface Equipment {
   needed: number;
 }
 
+export interface OrganRequest {
+  id: string;
+  patientName: string;
+  organType: string;
+  hospital: string;
+  urgency: 'critical' | 'high' | 'medium' | 'low';
+  bloodGroup: string;
+  age: number;
+  distance: number;
+  avatar: string;
+}
+
 export interface DonationHistory {
   id: string;
-  type: 'blood' | 'fund' | 'equipment';
+  type: 'blood' | 'fund' | 'equipment' | 'organ';
   title: string;
   amount?: string;
   date: string;
@@ -188,11 +200,69 @@ export const mockDonationHistory: DonationHistory[] = [
     status: 'completed'
   },
   {
-    id: '5',
-    type: 'blood',
-    title: 'Blood Donation to AIIMS',
-    date: '2026-01-20',
+    id: '6',
+    type: 'organ',
+    title: 'Organ Donor Registration',
+    date: '2026-02-18',
     status: 'completed'
+  }
+];
+
+export const mockOrganRequests: OrganRequest[] = [
+  {
+    id: '1',
+    patientName: 'Rahul Verma',
+    organType: 'Kidney',
+    hospital: 'Apollo Hospital, Delhi',
+    urgency: 'critical',
+    bloodGroup: 'O+',
+    age: 45,
+    distance: 3.2,
+    avatar: '👨‍⚕️'
+  },
+  {
+    id: '2',
+    patientName: 'Priya Singh',
+    organType: 'Liver',
+    hospital: 'Max Hospital, Bangalore',
+    urgency: 'high',
+    bloodGroup: 'B+',
+    age: 32,
+    distance: 7.8,
+    avatar: '👩'
+  },
+  {
+    id: '3',
+    patientName: 'Amit Kumar',
+    organType: 'Heart',
+    hospital: 'AIIMS, Mumbai',
+    urgency: 'critical',
+    bloodGroup: 'AB+',
+    age: 28,
+    distance: 12.5,
+    avatar: '👨'
+  },
+  {
+    id: '4',
+    patientName: 'Sneha Patel',
+    organType: 'Lung',
+    hospital: 'Fortis Hospital, Pune',
+    urgency: 'high',
+    bloodGroup: 'A+',
+    age: 38,
+    distance: 18.3,
+    avatar: '👩‍🏫'
+  },
+  {
+    id: '5',
+    patientName: 'Vikram Joshi',
+    organType: 'Kidney',
+    hospital: 'Medanta Hospital, Gurgaon',
+    urgency: 'medium',
+    bloodGroup: 'O-',
+    age: 52,
+    distance: 25.0,
+    avatar: '👨‍💼'
   }
 ];
 

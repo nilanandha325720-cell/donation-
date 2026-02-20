@@ -5,6 +5,7 @@ import './styles/global.css';
 import './screens/SplashScreen.css';
 import './screens/HomeScreen.css';
 import './screens/BloodDonationScreen.css';
+import './screens/OrganDonationScreen.css';
 import './screens/FundDonationScreen.css';
 import './screens/MedicalEquipmentScreen.css';
 import './screens/ProfileScreen.css';
