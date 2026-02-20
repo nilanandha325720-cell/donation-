@@ -1,0 +1,93 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  animation: fadeIn var(--transition-base);
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--color-white);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-xl);
+  z-index: 1000;
+  max-height: 90vh;
+  overflow-y: auto;
+  animation: slideUp var(--transition-base);
+}
+
+.modal-sm {
+  width: 90%;
+  max-width: 300px;
+}
+
+.modal-md {
+  width: 90%;
+  max-width: 500px;
+}
+
+.modal-lg {
+  width: 90%;
+  max-width: 700px;
+}
+
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-lg);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.modal-header h2 {
+  margin: 0;
+  flex: 1;
+}
+
+.modal-close {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: var(--space-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text-secondary);
+  transition: color var(--transition-fast);
+}
+
+.modal-close:hover {
+  color: var(--color-text);
+}
+
+.modal-body {
+  padding: var(--space-lg);
+}
+
+/* Mobile optimization */
+@media (max-width: 640px) {
+  .modal {
+    position: fixed;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: none;
+    border-radius: var(--radius-2xl) var(--radius-2xl) 0 0;
+    max-height: 80vh;
+  }
+
+  .modal-sm,
+  .modal-md,
+  .modal-lg {
+    width: 100%;
+    max-width: none;
+  }
+}

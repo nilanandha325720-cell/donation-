@@ -1,0 +1,100 @@
+.medical-equipment-screen {
+  padding: var(--space-xl);
+  padding-bottom: calc(var(--space-xl) + 80px);
+}
+
+.screen-header {
+  margin-bottom: var(--space-xl);
+}
+
+.screen-header h1 {
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text);
+  margin-bottom: var(--space-sm);
+}
+
+.screen-header p {
+  color: var(--color-text-secondary);
+}
+
+.action-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  margin-bottom: var(--space-3xl);
+}
+
+.equipment-list h2 {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text);
+  margin-bottom: var(--space-lg);
+}
+
+.equipment-card {
+  padding: var(--space-lg);
+  margin-bottom: var(--space-md);
+}
+
+.equipment-header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.equipment-icon {
+  color: var(--color-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: var(--color-neutral-light);
+}
+
+.equipment-info {
+  flex: 1;
+}
+
+.equipment-name {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text);
+  margin-bottom: var(--space-sm);
+}
+
+.equipment-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+}
+
+.equipment-stats span {
+  padding: var(--space-xs) var(--space-sm);
+  background-color: var(--color-neutral-light);
+  border-radius: var(--radius-sm);
+}
+
+.success-content {
+  text-align: center;
+  padding: var(--space-lg) 0;
+}
+
+.success-icon {
+  font-size: 3rem;
+  margin-bottom: var(--space-md);
+}
+
+.success-content h3 {
+  color: var(--color-success);
+  margin-bottom: var(--space-md);
+}
+
+.success-content p {
+  color: var(--color-text-secondary);
+  line-height: 1.5;
+}

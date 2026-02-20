@@ -1,0 +1,42 @@
+.splash-screen {
+  min-height: 100vh;
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-xl);
+}
+
+.splash-content {
+  text-align: center;
+  color: var(--color-white);
+  max-width: 400px;
+}
+
+.logo {
+  margin-bottom: var(--space-3xl);
+}
+
+.app-name {
+  font-size: var(--font-size-3xl);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--space-md);
+  letter-spacing: -0.02em;
+}
+
+.logo-icon {
+  font-size: 4rem;
+  margin-bottom: var(--space-lg);
+}
+
+.tagline {
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-semibold);
+  margin-bottom: var(--space-md);
+}
+
+.subtitle {
+  font-size: var(--font-size-base);
+  opacity: 0.9;
+  margin-bottom: var(--space-3xl);
+}

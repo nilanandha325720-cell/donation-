@@ -1,0 +1,14 @@
+.skeleton {
+  background: linear-gradient(
+    90deg,
+    var(--color-neutral-light) 0%,
+    var(--color-neutral-gray) 50%,
+    var(--color-neutral-light) 100%
+  );
+  background-size: 1000px 100%;
+  animation: shimmer 2s infinite;
+}
+
+.skeleton-circle {
+  margin-right: var(--space-md);
+}
